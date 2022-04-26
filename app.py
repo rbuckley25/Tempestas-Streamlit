@@ -4,6 +4,7 @@ import pandas as pd
 #from streamlit_tensorboard import st_tensorboard
 import os
 
+st. set_page_config(layout="wide") 
 
 def read_video(file):
     video_file = open(file, 'rb')
