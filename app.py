@@ -2,7 +2,7 @@ from statistics import mean
 import streamlit as st
 import pandas as pd
 import tensorboard
-from streamlit_tensorboard import st_tensorboard
+#from streamlit_tensorboard import st_tensorboard
 import os
 
 
@@ -130,6 +130,4 @@ with metric5:
 with metric6:
     st.metric(label="Completed ?/10", value=str(df2[2]), delta=str(df2[2]-base[2]))
 
-st.header('TensorBoard Results')
 
-st_tensorboard(logdir='./tensorboard_res')
